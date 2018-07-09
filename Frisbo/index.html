@@ -6,38 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel='shortcut icon' type='image/x-icon' href='D:/HighContrastInternship/Frisbo/images/favicon.ico' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Frisbo | We take it from here</title>
+    <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+            
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: white;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            }
+            </style>
 </head>
 <body>
     <header class="header">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"></a>
-                    </div>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#"><img src="D:/HighContrastInternship/Frisbo/images/Frisbo logo.png" alt="logo"></a></li>
-                    </ul>
-                    <ul class="language-switch hidden-md-down nav navbar-nav navbar-right">
-                        <li><a href="#" title="EN">EN</a></li>
-                        <li><a href="#" title="RO" class="current_language">RO</a></li>
-                        
+                        <li><a href="#"><img src="D:/HighContrastInternship/Frisbo/images/Frisbo logo.png" alt="logo"></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li>Home</li>
-                        <li>Cum functioneaza</li>
-                        <li>Preturi</li>
-                        <li>Start</li>
-                        <li>In Presa</li>
-                        <li>Contact</li>
+                        <li><a href="#" title="EN">EN</a></li>
+                        <li><a href="#" title="RO" class="current_language">RO</a></li>    
+                        <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
                     </ul>
                 </div>
             </nav>    
     </header>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Cum functioneaza</a>
+            <a href="#">Preturi</a>
+            <a href="#">Start</a>
+            <a href="#">In Presa</a>
+            <a href="#">Contact</a>
+          </div>
+    
+
+    <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
 </body>
 </html>
