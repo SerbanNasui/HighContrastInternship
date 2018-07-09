@@ -9,54 +9,13 @@
     
     <link rel='shortcut icon' type='image/x-icon' href='D:/HighContrastInternship/Frisbo/images/favicon.ico' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Frisbo | We take it from here</title>
-    <style>
-            body {
-                font-family: "Lato", sans-serif;
-            }
-            
-            .sidenav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: white;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-            }
-            
-            .sidenav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-            }
-            
-            .sidenav a:hover {
-                color: #f1f1f1;
-            }
-            
-            .sidenav .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-            
-            @media screen and (max-height: 450px) {
-              .sidenav {padding-top: 15px;}
-              .sidenav a {font-size: 18px;}
-            }
-            </style>
+    
 </head>
 <body>
     <header class="header">
@@ -81,17 +40,21 @@
             <a href="#">Start</a>
             <a href="#">In Presa</a>
             <a href="#">Contact</a>
+            <div class="social">
+            <a class="fa fa-facebook-official" style="font-size:48px;color:blue" href="https://www.facebook.com" target="_blank"></a>
+            <a class="fa fa-google-plus" style="font-size:48px;color:red"href="https://plus.google.com/discover" target="_blank"></a>
+            </div>
           </div>
     
-
+        
     <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
+        function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+        }
             
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-            </script>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
