@@ -1,0 +1,11 @@
+.header .navbar-toggler {
+    color: #000;
+}
+
+.header .header--brand-image--color {
+    display: block !important;
+}
+
+.header--brand-image--white {
+    display: none !important;
+  }
