@@ -16,7 +16,7 @@ body {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 80px;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
@@ -25,7 +25,7 @@ body {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #33cc33;
 }
 
 .sidenav .closebtn {
@@ -48,7 +48,17 @@ body {
 
 .social a {
     display: inline-block !important;
-    font-size:30px;
+    font-size:20px;
+    color: gray;
+    padding: 0px 0px 0px 80px;
+    
+}
+
+
+
+.social a:hover{
+    color: #33cc33;
+
 }
 
 .navbar-default {
