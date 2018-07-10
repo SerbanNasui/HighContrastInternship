@@ -1,5 +1,31 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: Helvetica ,Arial,sans-serif;
+    font-size: 1,5rem;
+    line-height: 1.5;
+    color: #373a3c;
+    background-color: #fff; 
+}
+
+.container{
+
+    
+
+}
+
+.row{
+    margin-right: 0;
+    
+ 
+}
+
+.col{
+    padding: 0;
+    
+}
+
+.col2{
+    padding: 0;
+        
 }
 
 .sidenav {
@@ -54,8 +80,6 @@ body {
     
 }
 
-
-
 .social a:hover{
     color: #33cc33;
 
@@ -67,3 +91,26 @@ body {
     background-color:transparent;
     border: none;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+ }
+
+ .elem{
+    padding: 8px 8px 8px 80px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+ }
+
+ .elem a{
+     text-decoration: none;
+ }

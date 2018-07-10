@@ -14,55 +14,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="functions.js"></script>
     <title>Frisbo | We take it from here</title>
     
 </head>
 <body>
-    <header class="header">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#"><img src="D:/HighContrastInternship/Frisbo/images/Frisbo logo.png" alt="logo"></a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">EN</a></li>
-                        <li><a href="#">RO</a></li>    
-                        <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
-                    </ul>
-                </div>
-            </nav>    
-    </header>
-    <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
+    <div class="container">
+        <div class="row">  
+            <header class="header">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><img src="D:/HighContrastInternship/Frisbo/images/Frisbo logo.png" alt="logo"></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">RO</a></li>    
+                            <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+                        </ul>
+                    </div>
+                </nav>    
+            </header>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        
+                <a href="#">Home</a>
+                <a href="#">Cum functioneaza</a>
+                <a href="#">Preturi</a>
+                <a href="#">Start</a>
+                <a href="#">In Presa</a>
+                <a href="#">Contact</a>
+                <br><br><br>
+                <div class="social">
+                    <a class="fa fa-facebook" href="https://www.facebook.com" target="_blank"></a>
+                    <a class="fa fa-google-plus" href="https://plus.google.com/discover" target="_blank"></a>
+                </div>                    
+            </div>
+                        <div class="col">
+                            fefefefefe
+                        </div>
+                        <div class="col2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, nam commodi atque officiis error assumenda consequatur dignissimos quibusdam eaque eius iste facilis nihil consectetur eum, porro distinctio sint quam voluptates.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, explicabo. Cum recusandae a molestiae enim, sit ipsa, repellendus molestias animi sapiente aliquid fugit atque asperiores optio excepturi, ipsum cupiditate? Cumque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi, assumenda voluptas quo dignissimos quia ab porro sed! Harum culpa asperiores corrupti natus facilis voluptatum dolorem eos excepturi sint eum.
+                        </p>
+                
+        </div>
+    </div>
+    <footer class = "footer">
+        <div class="elem">
             <a href="#">Home</a>
             <a href="#">Cum functioneaza</a>
             <a href="#">Preturi</a>
             <a href="#">Start</a>
             <a href="#">In Presa</a>
             <a href="#">Contact</a>
-            <br><br><br>
-            <div class="social">
+        </div>
+        <p>© 2018 Frisbo. Toate drepturile rezervate.</p> 
+        <p>Design & development by High Contrast.</p>
+        <div class="social">
                 <a class="fa fa-facebook" href="https://www.facebook.com" target="_blank"></a>
                 <a class="fa fa-google-plus" href="https://plus.google.com/discover" target="_blank"></a>
-            </div>
-        
-          </div>
-    
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, nam commodi atque officiis error assumenda consequatur dignissimos quibusdam eaque eius iste facilis nihil consectetur eum, porro distinctio sint quam voluptates.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, explicabo. Cum recusandae a molestiae enim, sit ipsa, repellendus molestias animi sapiente aliquid fugit atque asperiores optio excepturi, ipsum cupiditate? Cumque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi, assumenda voluptas quo dignissimos quia ab porro sed! Harum culpa asperiores corrupti natus facilis voluptatum dolorem eos excepturi sint eum.
-        </p>
-    <script>
-        function openNav() {
-                    document.getElementById("mySidenav").style.width = "350px";
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-            
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
-    </script>
+        </div>
+        <a href="#"><img src="D:/HighContrastInternship/Frisbo/images/frisbo logo.png" alt="logo"></a>
+    </footer>
 </body>
 </html>
