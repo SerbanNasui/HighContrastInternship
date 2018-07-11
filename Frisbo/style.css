@@ -70,6 +70,10 @@ body {
     background-color:transparent;
     border: none;
 }
+.navbar-right,
+.navbar-right li {
+    display: inline-block;
+}
  .elem{
     padding: 8px 8px 8px 80px;
     text-decoration: none;
@@ -119,6 +123,8 @@ body {
     width: 100%;
     background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#34dd79 50%,#34dd79 100%);
 }
+@media only screen (max-width:576px) {
+}
 
 #myBtn {
     display: none; 
@@ -154,27 +160,18 @@ body {
     
 }
 
-h1{
+.main-title{
     color: gray;
     font-weight: bold;
     margin-top: 100px;
-    margin-left: 590px;
-    margin-bottom: -100px;
     font-size: 50px;
 }
 
-h5{
+.main-description{
     color: gray;
-    margin-top: 110px;
-    margin-left: 590px;
-    margin-bottom: -100px;
-
 }
 
 .but{
-    margin-top: 120px;
-    margin-left: 590px;
-    margin-bottom: -100px;
     border-radius: 30px;
     width: 150px;
     border: none;
@@ -187,19 +184,25 @@ h5{
     cursor: pointer;
 }
 
-#vid{
-    width: 620px;
-    height: 320px;
+.para{
+    font-size: 15px;
+    color: #9f9f9f;;
+    font-weight: bold;
+    text-align: center;
+    width: 120;
+    height: 103;
+    
 }
 
-#tv_container {
-    background: url('D:/HighContrastInternship/Frisbo/images/Mackbook-Air-Mock-Up.png') no-repeat top left transparent;
-    width: 400px; /* Adjust TV image width */
-    height: 300px; /* Adjust TV image height */
-    position: relative;
+.first-text{
+    font-weight: bold;
+    font-size: 70px;
+    color: #ececec;
 }
-#tv_container video {
-    position: absolute;
-    top: 30px; /* Adjust top position */
-    left: 40px; /* Adjust left position */
+
+.second-text{
+    font-weight: bold;
+    font-size: 70px;
+    color: #ececec;
+    text-align: right;
 }
