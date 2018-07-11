@@ -114,8 +114,10 @@ body {
 }
 
 .headerr{
-    position: absolute;
+   
+    
     width: 100%;
+    background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#34dd79 50%,#34dd79 100%);
 }
 
 #myBtn {
@@ -126,14 +128,78 @@ body {
     z-index: 199; 
     border: none; 
     outline: none; 
-    background-color: rgb(55, 218, 123); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    background-color: rgb(55, 218, 123);
+    color: white; 
+    cursor: pointer; 
     padding: 15px; 
-    border-radius: 50%; /* Rounded corners */
-    font-size: 125%; /* Increase font size */
+    border-radius: 50%;
+    font-size: 125%; 
+    width: 60px;
+    height: 60px;
 }
 
 #myBtn:hover {
-    background-color: rgb(53, 200, 105); /* Add a dark-grey background on hover */
+    background-color: rgb(53, 200, 105);
+}
+
+.backcolor{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(53,218,123);
+}
+
+#macbook-air{
+    width: 650px;
+    height: 350px;
+    
+}
+
+h1{
+    color: gray;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 590px;
+    margin-bottom: -100px;
+    font-size: 50px;
+}
+
+h5{
+    color: gray;
+    margin-top: 110px;
+    margin-left: 590px;
+    margin-bottom: -100px;
+
+}
+
+.but{
+    margin-top: 120px;
+    margin-left: 590px;
+    margin-bottom: -100px;
+    border-radius: 30px;
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: rgb(53,218,123);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#vid{
+    width: 620px;
+    height: 320px;
+}
+
+#tv_container {
+    background: url('D:/HighContrastInternship/Frisbo/images/Mackbook-Air-Mock-Up.png') no-repeat top left transparent;
+    width: 400px; /* Adjust TV image width */
+    height: 300px; /* Adjust TV image height */
+    position: relative;
+}
+#tv_container video {
+    position: absolute;
+    top: 30px; /* Adjust top position */
+    left: 40px; /* Adjust left position */
 }
