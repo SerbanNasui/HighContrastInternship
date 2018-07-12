@@ -206,3 +206,69 @@ body {
     color: #ececec;
     text-align: right;
 }
+
+.left-calculator{
+    background-color: rgb(55, 218, 123);
+}
+
+.right-calculator{
+    background-color: white;
+}
+
+.text-calculator{
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-calculator p{
+    font-size: 15px;
+    padding-left: 100px;
+    text-align: 1000px;
+}
+
+.calculator-title{
+    color: white;
+    font-weight: bold;
+    margin-top: 90px;
+    font-size: 30px;
+    margin-left: 350px;
+}
+
+.calculator-description{
+    color: white;
+    font-size: 15px;
+    margin-left: 350px;
+    margin-right: 400px;
+    margin-bottom: 90px;
+}
+
+.calculator-container--title{
+    padding-top: 40px;
+    color: #9f9f9f;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.social-media{
+    background-color: rgb(55, 218, 123);
+}
+
+.social-media--title{
+
+    color: white;
+    font-weight: bold;
+    margin-top: 90px;
+    font-size: 30px;
+ 
+}
+
+.social-media--text{
+    color: white;
+    font-size: 15px;
+    margin-right: 400px;
+    margin-bottom: 90px;
+    
+}
