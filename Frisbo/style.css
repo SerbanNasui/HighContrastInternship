@@ -272,3 +272,47 @@ body {
     margin-bottom: 90px;
     
 }
+
+.right-contact{
+    background-color: rgb(55, 218, 123);
+}
+
+.left-contact{
+    background-color: white;
+}
+
+
+.map{
+
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#depozite-p{
+    margin-top:20px;
+    text-align: center;
+    padding-left:200px;
+    padding-right: 50px;
+    font-weight: bold;
+    color: rgb(55, 218, 123);
+}
+
+
+#contact-p{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-left: 350px;
+    margin-right: 400px;
+    margin-bottom: 50px;
+    
+}
+
+.contact-description{
+    color: white;
+    font-size: 15px;
+    margin-left: 350px;
+    margin-right: 400px;
+
+}
+
