@@ -123,8 +123,8 @@ body {
     width: 100%;
     background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#34dd79 50%,#34dd79 100%);
 }
-@media only screen (max-width:576px) {
-}
+/*@media only screen (max-width:576px) {
+}*/
 
 #myBtn {
     display: none; 
