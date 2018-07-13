@@ -108,13 +108,24 @@ body {
     text-align: center;
  }
  
+ #copyright{
+     font-size: 13px;
+     color: #818181;
+ }
+
 .elemf a{
+    font-size: 14px;
+    color: #818181;
     text-decoration: none;
     padding-top: 17px;
     padding-left: 0px;
     padding-right: 0px;
     padding: 44px;
-    text-align: center;
+    
+}
+
+#logo-bottom{
+    padding-left: 220px;
 }
 
 .headerr{
@@ -260,17 +271,23 @@ body {
 
     color: white;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 40px;
     font-size: 30px;
+    
  
 }
 
 .social-media--text{
     color: white;
     font-size: 15px;
-    margin-right: 400px;
-    margin-bottom: 90px;
+    padding-bottom: 50px;
     
+}
+
+
+.store-images{
+    margin-top: 65px;
+    display: inline-block !important;
 }
 
 .right-contact{
@@ -315,4 +332,3 @@ body {
     margin-right: 400px;
 
 }
-
