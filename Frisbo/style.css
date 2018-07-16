@@ -361,6 +361,9 @@ body {
     top: 50%;
     right: 0;
     color: #9f9f9f;
+    font-size: 30px !important;
+    font-weight: bold;
+    
 }
 
 .contact-container{
