@@ -28,8 +28,12 @@ function topFunction() {
 }
 
 $(document).ready(function(){
-    $('.slick-nac').slick({
-      
+    $('.slickCarousel').slick({
+        arrows: true,
+        slidesToShow: 5,
+        prevArrow: '<i class="fa fa-angle-left slick-arrow icons-carousel--prev"></i>',
+        nextArrow: '<i class="fa fa-angle-right slick-arrow icons-carousel--next"></i>'
     });
   });
-
+  
+  

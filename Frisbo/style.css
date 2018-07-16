@@ -332,3 +332,41 @@ body {
     margin-right: 400px;
 
 }
+
+.nav-ingegrari{
+    padding: 30px;
+    
+}
+
+.nav-clienti{
+    padding: 30px;
+}
+
+.icons-carousel--prev, .icons-carousel--next {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.slick-arrow{
+    cursor: pointer;
+}
+.icons-carousel--prev {
+    left: 0;
+}
+
+.icons-carousel--next, .icons-carousel--prev {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #9f9f9f;
+}
+
+.contact-container{
+    padding-top: 40px;
+    color: #9f9f9f;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+}

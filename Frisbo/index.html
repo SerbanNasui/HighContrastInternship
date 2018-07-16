@@ -19,8 +19,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="functions.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <title>Frisbo | We take it from here</title>
@@ -86,7 +85,7 @@
                     <button type="button" class="but">Start</button>
                 </div>
                 <div class="col-12 col-sm-7">
-                    <img src="D:/HighContrastInternship/Frisbo/images/Mackbook-Air-Mock-Up.png" alt="Macbook" id="macbook-air">
+                    <img src="D:/HighContrastInternship/Frisbo/images/Mackbook-Air-Mock-Up_1.png" alt="Macbook" id="macbook-air">
                 </div>
             </div>
         </div>
@@ -164,7 +163,7 @@
     <br>
     <br>
     <!--Calculator-->
-    <div class="fluid-container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-8 left-calculator">
                 <h4 class="calculator-title">
@@ -191,20 +190,38 @@
     <!--Integrari-->
     <div class="container">
         <h3 class="first-text">INTEGRĂRI</h3>
-        <br>
-        <div class="row">
-            <div class="slick-nav">
-                <img src="images/Integrari/emag.png" alt="">
-                <img src="images/Integrari/Magento.png" alt="">
-                <img src="images/Integrari/Prestashop.png" alt="">
-                <img src="images/Integrari/woo commerce.png" alt="">
-
+        <div class="slick-nav nav-ingegrari slickCarousel">
+            <div>
+                <img src="images/Integrari/emag.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/Magento.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/Prestashop.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/woo commerce.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/blugento.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/flanco.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/gomag.png" alt="" width="210" height="120">
+            </div>
+            <div>
+                <img src="images/Integrari/okazii.png" alt="" width="210" height="120">
             </div>
         </div>
     </div>
+    <br>
+    <br>
 
     <!--Social media-->
-    <div class="fluid-containet">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-12 social-media">
                 <div class="container">
@@ -236,31 +253,77 @@
 
     <!--Clienti-->
     <br>
+    <br>
     <div class="container">
         <h3 class="second-text">CLIENȚI</h3>
-        <div class="row">
-            <div class="slick-nav">
+        <div class="slick-nav--clienti nav-clienti slickCarousel">
+            <div>
                 <img src="images/Clienti/Benaza.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Carpa Nera.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Komoder.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Natural paint.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Okian.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/pentru acasa.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Sport Addict.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Starcom.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/trilulilu.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Tucai.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Univers.png" alt="">
+            </div>
+            <div>
                 <img src="images/Clienti/Ursula Dragon.png" alt="">
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
 
     <!--Contact-->
-    <div class="fluid-container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-4 left-contact">
-
+                <div class="container">
+                    <div class="contact-container">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" type="textarea" id="message" placeholder="Message" rows="7"></textarea>
+                            </div>
+                            Următoarele date sunt preluate cu scopul de a putea lua legătura cu tine. <a href=""><b>Vezi datele.</b></a>
+                            <div class="checkbox">
+                                    <label><input type="checkbox" name="remember"> Remember me</label>
+                                  </div>
+                            <button type="button" id="submit" name="submit" class="btn btn-success pull-right">Submit Form</button>
+                            
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-sm-8 right-contact">
                 <h4 class="calculator-title">
@@ -302,8 +365,8 @@
             <div class="container-fluid text-center text-md-left">
                 <div class="row">
                     <div class="col-md-4">
-                        <p id = "copyright">© 2018 Frisbo. Toate drepturile rezervate.</p>
-                        <p id = "copyright">Design & development by High Contrast.</p>
+                        <p id="copyright">© 2018 Frisbo. Toate drepturile rezervate.</p>
+                        <p id="copyright">Design & development by High Contrast.</p>
                     </div>
                     <div class="col-md-4">
                         <div class="social">
@@ -322,6 +385,7 @@
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <script src="functions.js"></script>
 </body>
 
 </html>
