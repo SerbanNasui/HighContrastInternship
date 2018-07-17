@@ -32,7 +32,24 @@ $(document).ready(function(){
         arrows: true,
         slidesToShow: 5,
         prevArrow: '<i class="fa fa-angle-left slick-arrow icons-carousel--prev"></i>',
-        nextArrow: '<i class="fa fa-angle-right slick-arrow icons-carousel--next"></i>'
+        nextArrow: '<i class="fa fa-angle-right slick-arrow icons-carousel--next"></i>',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+           
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            }
+          ]
     });
   });
   
