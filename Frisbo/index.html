@@ -43,13 +43,13 @@
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a href="#">EN</a>
+                                    <a href="#" class="langs" style="font-size: 16px">EN</a>
                                 </li>
                                 <li>
-                                    <a href="#">RO</a>
+                                    <a href="#" class="langs-ro" style="font-size: 16px">RO</a>
                                 </li>
                                 <li>
-                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                                    <span style="font-size:20px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
                                 </li>
                             </ul>
                         </div>
@@ -163,27 +163,329 @@
     <br>
     <br>
     <!--Calculator-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-8 left-calculator">
-                <h4 class="calculator-title">
-                    Calculator de preț
-                </h4>
-                <h5 class="calculator-description">Îți punem la dispoziție un sistem de pricing scalabil, adaptat dimensiunii afacerii tale. Costurile de e-fulfillment
-                    includ un preț fix și o serie de costuri variabile în funcție de numărul de comenzi procesate sau de
-                    cantitatea de produse depozitate de către noi.</h5>
-            </div>
-            <div class="col-12 col-sm-4 right-calculator">
-                <div class="calculator-container">
-                    <article>
-                        <section>
-                            <h2 class="calculator-container--title">Depozitare</h2>
-                        </section>
-                    </article>
+    <section class="full-background-color price">
+        <div class="desktop-background-color left"></div>
+        <div class="card-container">
+            <div class="container">
+                <div class="row card-container--mobile-background">
+                    <div class="col-md-12 col-lg-5 card-container--content">
+                        <div class="card-container--content--in">
+                            <div class="card-container--content--middle">
+                                <h2 class="card-container--title"> Calculator de preț </h2>
+
+                                <p class="card-container--description"> Îți punem la dispoziție un sistem de pricing scalabil, adaptat dimensiunii afacerii tale.
+                                    Costurile de e-fulfillment includ un preț fix și o serie de costuri variabile în funcție
+                                    de numărul de comenzi procesate sau de cantitatea de produse depozitate de către noi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 col-xl-7 card-container--card--mobile-inner">
+                        <div class="card-container--card card-container--card--desktop card-container---mobile--content right">
+                            <link rel="stylesheet" href="/pricing-calculator/css/ion.rangeSlider.skinNice3.css">
+
+
+                            <div class="main-container calculator-container">
+                                <div class="main wrapper clearfix">
+
+                                    <article class="calculator-container--article active">
+                                        <section>
+                                            <h2 class="calculator-container--title">Depozitare</h2>
+                                        </section>
+                                        <section>
+                                            <span class="irs js-irs-0">
+                                                <span class="irs">
+                                                    <span class="irs-line" tabindex="-1">
+                                                        <span class="irs-line-left"></span>
+                                                        <span class="irs-line-mid"></span>
+                                                        <span class="irs-line-right"></span>
+                                                    </span>
+                                                    <span class="irs-min" style="visibility: visible;">0</span>
+                                                    <span class="irs-max" style="visibility: visible;">3000</span>
+                                                    <span class="irs-from" style="visibility: hidden;">0</span>
+                                                    <span class="irs-to" style="visibility: hidden;">0</span>
+                                                    <span class="irs-single" style="left: 46.7692%;">52</span>
+                                                </span>
+                                                <span class="irs-grid"></span>
+                                                <span class="irs-bar" style="left: 3.38462%; width: 46.6154%;"></span>
+                                                <span class="irs-bar-edge"></span>
+                                                <span class="irs-shadow shadow-single" style="display: none;"></span>
+                                                <span class="irs-slider single" style="left: 46.6154%;"></span>
+                                            </span>
+                                            <input id="skuRange" type="text" value="" class="irs-hidden-input" readonly="">
+                                            <div class="calculator-container--slider">
+                                                <span id="skuValue">
+                                                    <em>52</em> SKU / lună</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <span class="irs js-irs-1">
+                                                <span class="irs">
+                                                    <span class="irs-line" tabindex="-1">
+                                                        <span class="irs-line-left"></span>
+                                                        <span class="irs-line-mid"></span>
+                                                        <span class="irs-line-right"></span>
+                                                    </span>
+                                                    <span class="irs-min" style="visibility: visible;">0</span>
+                                                    <span class="irs-max" style="visibility: visible;">300</span>
+                                                    <span class="irs-from" style="visibility: hidden;">0</span>
+                                                    <span class="irs-to" style="visibility: hidden;">0</span>
+                                                    <span class="irs-single" style="left: 19.4123%;">2</span>
+                                                </span>
+                                                <span class="irs-grid"></span>
+                                                <span class="irs-bar" style="left: 3.38462%; width: 18.3354%;"></span>
+                                                <span class="irs-bar-edge"></span>
+                                                <span class="irs-shadow shadow-single" style="display: none;"></span>
+                                                <span class="irs-slider single" style="left: 18.3354%;"></span>
+                                            </span>
+                                            <input id="paletRange" type="text" value="" class="irs-hidden-input" readonly="">
+                                            <div class="calculator-container--slider">
+                                                <span id="paletValue">
+                                                    <em>2</em> Paleti / lună</span>
+                                            </div>
+                                        </section>
+
+                                        <section class="definer">
+                                            <h2 class="calculator-container--title"> Procesare Comenzi</h2>
+                                            <!--<input type="text" id="orderRangeInput" /> -->
+                                        </section>
+
+                                        <section>
+                                            <span class="irs js-irs-2">
+                                                <span class="irs">
+                                                    <span class="irs-line" tabindex="-1">
+                                                        <span class="irs-line-left"></span>
+                                                        <span class="irs-line-mid"></span>
+                                                        <span class="irs-line-right"></span>
+                                                    </span>
+                                                    <span class="irs-min" style="visibility: visible;">0</span>
+                                                    <span class="irs-max" style="visibility: visible;">30000</span>
+                                                    <span class="irs-from" style="visibility: hidden;">0</span>
+                                                    <span class="irs-to" style="visibility: hidden;">0</span>
+                                                    <span class="irs-single" style="left: 51.8114%;">307</span>
+                                                </span>
+                                                <span class="irs-grid"></span>
+                                                <span class="irs-bar" style="left: 3.38462%; width: 52.4268%;"></span>
+                                                <span class="irs-bar-edge"></span>
+                                                <span class="irs-shadow shadow-single" style="display: none;"></span>
+                                                <span class="irs-slider single" style="left: 52.4268%;"></span>
+                                            </span>
+                                            <input id="orderRange" type="text" value="" class="irs-hidden-input" readonly="">
+                                            <div class="calculator-container--slider">
+                                                <span id="orderValue">
+                                                    <em>307</em> Comenzi / lună</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <span class="irs js-irs-3">
+                                                <span class="irs">
+                                                    <span class="irs-line" tabindex="-1">
+                                                        <span class="irs-line-left"></span>
+                                                        <span class="irs-line-mid"></span>
+                                                        <span class="irs-line-right"></span>
+                                                    </span>
+                                                    <span class="irs-min" style="visibility: visible;">1</span>
+                                                    <span class="irs-max" style="visibility: visible;">50</span>
+                                                    <span class="irs-from" style="visibility: hidden;">0</span>
+                                                    <span class="irs-to" style="visibility: hidden;">0</span>
+                                                    <span class="irs-single" style="left: 2.97959%;">2</span>
+                                                </span>
+                                                <span class="irs-grid"></span>
+                                                <span class="irs-bar" style="left: 3.38462%; width: 1.90267%;"></span>
+                                                <span class="irs-bar-edge"></span>
+                                                <span class="irs-shadow shadow-single" style="display: none;"></span>
+                                                <span class="irs-slider single" style="left: 1.90267%;"></span>
+                                            </span>
+                                            <input id="qtyOrderRange" type="text" value="" class="irs-hidden-input" readonly="">
+                                            <div class="calculator-container--slider">
+                                                <span id="qtyOrderValue">
+                                                    <em>2</em> Bucati / Comandă</span>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <span class="irs js-irs-4">
+                                                <span class="irs">
+                                                    <span class="irs-line" tabindex="-1">
+                                                        <span class="irs-line-left"></span>
+                                                        <span class="irs-line-mid"></span>
+                                                        <span class="irs-line-right"></span>
+                                                    </span>
+                                                    <span class="irs-min" style="visibility: visible;">0</span>
+                                                    <span class="irs-max" style="visibility: visible;">3000</span>
+                                                    <span class="irs-from" style="visibility: hidden;">0</span>
+                                                    <span class="irs-to" style="visibility: hidden;">0</span>
+                                                    <span class="irs-single" style="left: 28.6825%;">10</span>
+                                                </span>
+                                                <span class="irs-grid"></span>
+                                                <span class="irs-bar" style="left: 3.38462%; width: 28.5286%;"></span>
+                                                <span class="irs-bar-edge"></span>
+                                                <span class="irs-shadow shadow-single" style="display: none;"></span>
+                                                <span class="irs-slider single" style="left: 28.5286%;"></span>
+                                            </span>
+                                            <input id="returnRange" type="text" value="" class="irs-hidden-input" readonly="">
+                                            <div class="calculator-container--slider">
+                                                <span id="returnValue">
+                                                    <em>10</em> Retururi / lună</span>
+                                            </div>
+                                        </section>
+                                        <!-- 
+              // If is in template integrare-emag-marketplace hide section
+            -->
+                                        <section class="definer calculator-container--call-center">
+                                            <p>Serviciu Suplimentar: </p>
+                                            <strong> Call Center </strong> (1euro/comandă)
+                                            <input id="callCenter" type="checkbox" name="call-center" value="1">
+                                            <br>
+                                        </section>
+                                        <section class="definer calculator-container--total">
+                                            <h2 class="title calculator-container--total--title">Total</h2>
+                                            <div id="total" class="calculator-container--total--value">
+                                                <span>337.40</span> € / lună </div>
+                                        </section>
+
+                                        <footer class="definer calculator-container--next">
+                                            <button id="calculator--next-step" class="btn btn-cta calculator-container--next--button">Pasul următor</button>
+                                        </footer>
+                                    </article>
+
+                                    <div class="card-container---step-II">
+                                        <!-- 
+              // Show specific cf7 shortcode 
+              -->
+                                        <div role="form" class="wpcf7" id="wpcf7-f60-o2" lang="en-US" dir="ltr">
+                                            <div class="screen-reader-response"></div>
+                                            <form action="/#wpcf7-f60-o2" method="post" class="wpcf7-form mailchimp-ext-0.4.50" novalidate="novalidate">
+                                                <div style="display: none;">
+                                                    <input type="hidden" name="_wpcf7" value="60">
+                                                    <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                                                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f60-o2">
+                                                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                                                </div>
+                                                <p>
+                                                    <label> Nume
+                                                        <br>
+                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                            <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false">
+                                                        </span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label> E-mail
+                                                        <br>
+                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                aria-required="true" aria-invalid="false">
+                                                        </span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label> Tipul de Business
+                                                        <br>
+                                                        <span class="wpcf7-form-control-wrap business">
+                                                            <select name="business" class="wpcf7-form-control wpcf7-select business-type" id="business-type" aria-invalid="false">
+                                                                <option value="Alimente">Alimente</option>
+                                                                <option value="Produse cu regim special (PIRO)">Produse cu regim special (PIRO)</option>
+                                                                <option value="Farma si Cosmetice">Farma si Cosmetice</option>
+                                                                <option value="Electrocasnice">Electrocasnice</option>
+                                                                <option value="Produse generale">Produse generale</option>
+                                                                <option value="Produse voluminoase">Produse voluminoase</option>
+                                                                <option value="Altele">Altele</option>
+                                                            </select>
+                                                        </span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label> Detalii
+                                                        <br>
+                                                        <span class="wpcf7-form-control-wrap textarea">
+                                                            <textarea name="textarea" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea message" id="message" aria-invalid="false">Bună ziua, sunt interesat de serviciul dvs. Vă rog să mă contactați.</textarea>
+                                                        </span>
+                                                        <br>
+                                                    </label>
+                                                </p>
+                                                <div class="row gdprWrap">
+                                                    <div class="col-sm-12">
+                                                        <p>Următoarele date sunt preluate cu scopul de a putea lua legătura
+                                                            cu tine.
+                                                            <b class="gdpr__more">Vezi datele.</b>
+                                                        </p>
+                                                        <ul class="gdpr__data" style="display: none;">
+                                                            <li>Nume</li>
+                                                            <li>Email</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12 gdprWrap__acceptance">
+                                                        <span class="wpcf7-form-control-wrap acceptance-781">
+                                                            <span class="wpcf7-form-control wpcf7-acceptance">
+                                                                <span class="wpcf7-list-item">
+                                                                    <input type="checkbox" name="acceptance-781" value="1" aria-invalid="false" id="acceptance">
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <label for="acceptance" class="control-label">Sunt de acord.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="cf7-nav">
+                                                    <a id="calculator--prev-step" class="cf7-back">
+                                                        <i class="fa fa-angle-left" style="padding-right:10px;" aria-hidden="true"></i>Înapoi</a>
+                                                    <input type="submit" value="Trimite" class="wpcf7-form-control wpcf7-submit submit-pricing" disabled="">
+                                                    <span class="ajax-loader"></span>
+                                                    <p></p>
+                                                </div>
+                                                <div style="display:none">
+                                                    <span class="wpcf7-form-control-wrap orders">
+                                                        <input type="text" name="orders" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap sku">
+                                                        <input type="text" name="sku" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap pallets">
+                                                        <input type="text" name="pallets" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap call_center">
+                                                        <input type="text" name="call_center" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap qtyOrder">
+                                                        <input type="text" name="qtyOrder" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap returnValue">
+                                                        <input type="text" name="returnValue" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap total">
+                                                        <input type="text" name="total" value="" size="40" class="wpcf7-form-control wpcf7-text hidden" aria-invalid="false">
+                                                    </span>
+                                                </div>
+                                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                <p style="display: none !important">
+                                                    <span class="wpcf7-form-control-wrap referer-page">
+                                                        <input type="hidden" name="referer-page" value="direct visit" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false">
+                                                    </span>
+                                                </p>
+                                                <!-- Chimpmail extension by Renzo Johnson -->
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- #main -->
+                            </div>
+                            <!-- #main-container -->
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <br>
     <br>
 
@@ -300,40 +602,102 @@
     <br>
 
     <!--Contact-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-4 left-contact">
-                <div class="container">
-                    <div class="contact-container">
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" type="textarea" id="message" placeholder="Message" rows="7"></textarea>
-                            </div>
-                            Următoarele date sunt preluate cu scopul de a putea lua legătura cu tine. <a href=""><b>Vezi datele.</b></a>
-                            <div class="checkbox">
-                                    <label><input type="checkbox" name="remember"> Remember me</label>
-                                  </div>
-                            <button type="button" id="submit" name="submit" class="btn btn-success pull-right">Submit Form</button>
-                            
-                        </form>
+    <section class="full-background-color">
+        <div class="desktop-background-color right"></div>
+        <div class="card-container">
+            <div class="container">
+                <div class="row card-container--mobile-background">
+                    <div class="col-md-12 col-lg-6 hidden-md-down card-container--card card-container--card--desktop card-container---mobile--content left">
+                        <div role="form" class="wpcf7" id="wpcf7-f59-o3" lang="en-US" dir="ltr">
+                            <div class="screen-reader-response"></div>
+                            <form action="/#wpcf7-f59-o3" method="post" class="wpcf7-form mailchimp-ext-0.4.50" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="59">
+                                    <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f59-o3">
+                                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                                </div>
+                                <p>
+                                    <label> Nume
+                                        <br>
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                            <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false">
+                                        </span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label> E-mail
+                                        <br>
+                                        <span class="wpcf7-form-control-wrap your-email">
+                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                aria-required="true" aria-invalid="false">
+                                        </span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label> Mesaj
+                                        <br>
+                                        <span class="wpcf7-form-control-wrap your-message">
+                                            <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
+                                        </span>
+                                    </label>
+                                </p>
+                                <div class="row gdprWrap">
+                                    <div class="col-sm-12">
+                                        <p>Următoarele date sunt preluate cu scopul de a putea lua legătura cu tine.
+                                            <b class="gdpr__more">Vezi datele.</b>
+                                        </p>
+                                        <ul class="gdpr__data" style="display: none;">
+                                            <li>Nume</li>
+                                            <li>Email</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 gdprWrap__acceptance">
+                                        <span class="wpcf7-form-control-wrap acceptance-781">
+                                            <span class="wpcf7-form-control wpcf7-acceptance">
+                                                <span class="wpcf7-list-item">
+                                                    <input type="checkbox" name="acceptance-781" value="1" aria-invalid="false" id="acceptance">
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <label for="acceptance" class="control-label">Sunt de acord.</label>
+                                    </div>
+                                </div>
+                                <p>
+                                    <input type="submit" value="Trimite" class="wpcf7-form-control wpcf7-submit contact-submit" disabled="">
+                                    <span class="ajax-loader"></span>
+                                </p>
+                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                <p style="display: none !important">
+                                    <span class="wpcf7-form-control-wrap referer-page">
+                                        <input type="hidden" name="referer-page" value="direct visit" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false">
+                                    </span>
+                                </p>
+                                <!-- Chimpmail extension by Renzo Johnson -->
+                            </form>
+                        </div>
                     </div>
+
+                    <div class="col-md-12 col-lg-5 card-container--content">
+                        <div class="card-container--content--in">
+                            <div class="card-container--content--middle">
+                                <h2 class="card-container--title"> Contact </h2>
+
+                                <p class="card-container--description"> Misiunea noastră este să îți ușurăm munca și să creăm o legătură între magazinul tău și clienți.
+                                    <br>
+                                    <br>
+                                    <strong>Număr de contact: 0377.100.905</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-12 col-sm-8 right-contact">
-                <h4 class="calculator-title">
-                    Contact
-                </h4>
-                <h5 class="contact-description">Misiunea noastră este să îți ușurăm munca și să creăm o legătură între magazinul tău și clienți. </h5>
-                <p id="contact-p">Număr de contact: 0377.100.905</p>
-            </div>
         </div>
-    </div>
+    </section>
 
     <!--Depozite-->
     <br>
@@ -346,19 +710,35 @@
             </div>
         </div>
     </div>
+
+
+
     <!--Footer-->
     <div class="container">
         <footer class="page-footer font-small blue pt-4">
 
             <hr>
 
-            <div class="elemf">
-                <a href="#">Cum functioneaza</a>
-                <a href="#">Preturi</a>
-                <a href="#">Contact</a>
-                <a href="#">Termeni legali</a>
-                <a href="#">Plotica de confidentialitate</a>
-                <a href="#">Cookie Policy</a>
+            <div class=" row elemf">
+                <div class="col-sm-2">
+                    <a href="#">Cum functioneaza</a>
+                </div>
+
+                <div class="col-12 col-sm-2">
+                    <a href="#">Preturi</a>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <a href="#">Termeni legali</a>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <a href="#">Plotica de confidentialitate</a>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
             <br>
             <br>
