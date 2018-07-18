@@ -125,18 +125,33 @@ body {
 }
 
 #logo-bottom{
-    padding-left: 220px;
-    font-size: 50px;
+    margin-right: auto;
 }
 
 .headerr{
-   
-    
     width: 100%;
     background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#34dd79 50%,#34dd79 100%);
 }
-/*@media only screen (max-width:576px) {
-}*/
+
+
+@media screen and (max-width: 750px){
+.headerr {
+    background: linear-gradient(#34dd79, #34dd79);        
+}
+.top-logo {
+    display: none !important;
+}
+.langs, .langs-ro{
+    display: none;
+}
+
+.first-text, .second-text{
+    font-size: 30px!important;
+}
+
+.main-title, .main-description{color: white!important;}
+}
+
 
 #myBtn {
     display: none; 
@@ -315,8 +330,7 @@ body {
 #depozite-p{
     margin-top:20px;
     text-align: center;
-    padding-left:200px;
-    padding-right: 50px;
+    
     font-weight: bold;
     color: rgb(55, 218, 123);
 }
