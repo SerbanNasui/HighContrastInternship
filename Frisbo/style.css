@@ -156,6 +156,23 @@ body {
 .but{
     display: none!important;
 }
+
+.map--mobile{
+    display: block!important;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#depozite-p{
+    display: none;
+}
+
+.map{
+    display: none!important;
+}
+
 }
 
 .backcolor{
@@ -492,3 +509,6 @@ body {
     left: 45px !important;
 }
 
+.map--mobile{
+    display: none;
+}
