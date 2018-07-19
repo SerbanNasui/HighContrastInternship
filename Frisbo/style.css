@@ -513,7 +513,7 @@ body {
     left: 45px !important;
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 1200px)
 {
     .map--mobile{
         display: block!important;
