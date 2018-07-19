@@ -512,3 +512,23 @@ body {
 .map--mobile{
     display: none;
 }
+
+/* laptop video */
+div.laptop-wrapper {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 67.5%;
+    height: 0;
+}
+div.laptop-wrapper iframe {
+    box-sizing: border-box;
+    background: url(images/Mackbook-Air-Mock-Up.png) center center no-repeat;
+    background-size: contain;
+    padding: 13.5% 14% 19.4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
