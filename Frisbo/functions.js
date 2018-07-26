@@ -76,3 +76,13 @@ $(document).ready(function(){
         }, 700);
     });
 }
+
+$(".procesare-comanda").paroller({ factor: 0.2, factorXs: 0.2, type: 'foreground', direction: 'vertical' });
+
+$(".depozitare").paroller({ factor: 0.2, factorXs: 0.2, type: 'foreground', direction: 'vertical' });
+
+(".integrari").paroller({ factor: 0.2, factorXs: 0.2, type: 'foreground', direction: 'vertical' });
+
+$(".clienti").paroller({ factor: 0.2, factorXs: 0.2, type: 'foreground', direction: 'vertical' });
+
+$(".depozite").paroller({ factor: 0.2, factorXs: 0.2, type: 'foreground', direction: 'vertical' });
