@@ -1,0 +1,36 @@
+.navbar-links{
+    text-decoration: none!important;
+    color: gray;
+    margin:10px;
+}
+
+.navbar-links:hover{
+    color: #DF01A5;
+}
+
+.title-main--top{
+    margin-top: 30px;
+    color: #DF01A5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title-second--top{
+    text-align: center;
+}
+
+.first-section{
+    background: red;
+}
+
+.second-section{
+    background: blue;
+}
+
+.delegate-image{
+    /* margin-left: -20px; */
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    margin: -20 auto;
+}

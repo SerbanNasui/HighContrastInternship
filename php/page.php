@@ -22,4 +22,11 @@ $person ['name'] = 'Serban';
 //echo '</pre>';
 //echo $person['age'];
 
+$task = [
+    'title' => 'Finish homework',
+    'due' => 'today',
+    'assigned_to' => 'Serban',
+    'completed' => true
+];
+
 require 'page.view.php';

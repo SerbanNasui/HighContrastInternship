@@ -35,6 +35,38 @@
     <?php endforeach;?>
 </ul>
 
+<h1>Task for the day</h1>
+<ul>
+     <?php foreach ($task as $heading => $value) : ?>
+    <li>
+        <strong><?= $heading; ?></strong>: <?= $value; ?>
+    </li>
+    <?php endforeach; ?>
+
+    <li>
+        <strong>Name: </strong><?= $task['title']; ?>
+    </li>
+    <li>
+        <strong>Date: </strong><?= $task['due']; ?>
+    </li>
+    <li>
+        <strong>Person Resp: </strong><?= $task['assigned_to']; ?>
+    </li>
+    <li>
+        <strong>Status: </strong><?= $task['completed'] ? 'complete' : 'incomplete'; ?>
+    </li>
+
+    <li>
+        <strong>Status: </strong>
+        <?php
+        if($task['completed']){
+            echo '&#9989;';
+        }else{
+            echo 'Incomplete';
+        }
+        ?>
+    </li>
+</ul>
 
 </body>
 </html>
